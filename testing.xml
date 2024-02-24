@@ -6,7 +6,7 @@
         <run>
             <include name="sanity" />
             <include name="regression"/>
-            <!--                <include name="master"/>-->
+            <include name="master"/>
             <!--                <exclude name=""/>-->
         </run>
     </groups>
@@ -21,9 +21,12 @@
         <parameter name="browser" value="chrome" />
 
         <classes>
-            <class name="testCases.TC_001_AccountRegistrationTest" />
-            <class name="testCases.TC_002_LoginTest" />
-            <!--            <class name="testCases.TC_003_LoginDDT" /> DDT are separate type of groups-->
+<!--            <class name="testCases.TC_001_AccountRegistrationTest" />-->
+<!--            <class name="testCases.TC_002_LoginTest" />-->
+<!--            <class name="testCases.TC_003_LoginDDT" />      &lt;!&ndash;DDT are separate type of groups&ndash;&gt;-->
+<!--            <class name="testCases.TC_004_SearchProductTest" />-->
+<!--            <class name="testCases.TC_005_AddItemToCartTest" />-->
+            <class name="testCases.TC_006_EndToEndTest" />
         </classes>
     </test> <!--Test -->
 

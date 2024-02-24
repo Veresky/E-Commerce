@@ -32,6 +32,9 @@ public class AccountRegistrationPage extends BasePage {
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement msgConfirmation;
 
+    @FindBy(xpath = "//img[@alt='Your Store']")
+    WebElement imgOpencart;
+
     public void setFirstName(String firstName) {
         txtFirstName.sendKeys(firstName);
     }
@@ -62,6 +65,10 @@ public class AccountRegistrationPage extends BasePage {
         } catch (Exception e){
             return (e.getMessage());
         }
+    }
+
+    public void toHomePage(){
+        imgOpencart.click();
     }
 
 

@@ -17,7 +17,7 @@ public class MyAccountPage extends BasePage {
     WebElement lnkLogout;
 
     @FindBy(linkText = "Login") //Login link added in step5
-    WebElement linkLogin;
+    WebElement lnkLogin;
 
     public boolean isMyAccountPageExists(){
         try {

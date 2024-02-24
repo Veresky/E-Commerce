@@ -20,6 +20,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath="//a[normalize-space()='Login']")
     WebElement lnkLogin;
 
+    @FindBy(xpath = "//button[@data-lang='en-gb']")
+    WebElement btnSearch;
+
     public void clickMyAccount(){
         lnkMyAccount.click();
     }
@@ -30,6 +33,10 @@ public class HomePage extends BasePage {
 
     public void clickLogin(){
         lnkLogin.click();
+    }
+
+    public void toSearchPage(){
+        btnSearch.click();
     }
 
 }
